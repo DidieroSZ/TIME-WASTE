@@ -28,7 +28,6 @@
 - Mostrar equivalencias temporales curiosas.
 - Mostrar frases dinámicas aleatorias.
 - Visualizar estadísticas alternativas.
-- Guardar fechas favoritas.
 - Compartir resultados.
 
 ### No funcionales
@@ -46,7 +45,6 @@
 - Seleccionar actividad.
 - Calcular tiempo acumulado según edad.
 - Mostrar equivalencias y referencias.
-- Comparar actividades.
 - Generar predicciones futuras.
 - Mostrar visualizaciones dinámicas.
 - Compartir estadísticas.

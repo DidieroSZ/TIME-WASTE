@@ -1,0 +1,21 @@
+.picker-date{
+    width: 100%;
+    gap: var(--Pad08);
+}
+    .input-date{
+        background-color: var(--InnerComponent);
+        accent-color: var(--InnerComponent);
+        /* border: solid var(--Blanco) 1px; */
+    }
+    .arrow-date{
+        width: auto;
+        height: auto;
+        color: var(--Blanco);
+    }
+    .arrow-date > svg{
+        width: auto;
+        height: 2cap;
+        aspect-ratio: 1/1;
+        stroke-width: 3px;
+        margin-right: 0.5rem;
+    }

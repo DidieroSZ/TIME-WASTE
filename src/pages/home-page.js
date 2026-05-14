@@ -18,12 +18,12 @@ export class HomePage extends LitElement{
     static properties = {
         nombre: { type: String },
     };
-    
+
     constructor(){
         super();
         this.nombre = '';
     }
-    
+
     static styles = [
         css`${unsafeCSS(generalStyles)}`,
     ]
@@ -31,7 +31,7 @@ export class HomePage extends LitElement{
     render(){
         return html`
             <main class="main-container d-flexx d-col">
-                <section class="d-flexx d-col">
+                <section class="innerContainer">
                     <title-view></title-view>  
                     <nav-view></nav-view>
                     <date-picker-component></date-picker-component>

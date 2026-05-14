@@ -4,13 +4,14 @@
 
 /** GENERAL DOCUMENT CONFIGURATIONS */
 :host{
-    --Blanco: #fff;
-    --Gris: #333333;
-    --Negro: #1a1a1a;
-    --Fondo: #1a1a1a;
-    --Component: #1a1d2e;
-    --InnerComponent: #12152b;
-    --Naranja: #DAA464;
+    --Blanco: #f2f2f2;
+    --Gris: #888;
+    --Borde: #202629;
+    --Fondo: #111111;
+    --Component: #262626;
+    --InnerComponent: #181818;
+    --Azul: #12152b;
+    --Naranja: #eb9215;
 
     --Pad08: 8px;
     --Pad16: 16px;
@@ -79,7 +80,7 @@
         width: auto;
         height: 2cap;
         aspect-ratio: 1/1;
-        stroke-width: 3px;
+        /* stroke-width: 3px; */
         margin-right: 0.5rem;
     }
     .btn-gen:hover{
@@ -90,7 +91,6 @@
 }
 /** BUTTONS CLASES */
 
-
 .general-sections{
     width: 100%;
     height: auto;
@@ -99,26 +99,31 @@
     background-color: var(--Component);
     border-radius: var(--Pad16);
     padding: var(--Pad16);
+    margin-bottom: var(--Pad16);
+    border: solid 1px var(--Borde);
 }
+
+/** MAIN CONTAINER */
 .main-container{
     width: 100%;
     height: auto;
     min-height: 100vh;
-    padding: var(--Pad32);
-    background-color: var(--Gris);
+    padding: var(--Pad16);
+    background-color: var(--Fondo);
     justify-content: start;
     gap: var(--Pad16);
 }
-    .main-container > section{
-        width: min(550px, 100%);
+    .innerContainer{
+        width: min(600px, 100%);
         height: auto;
         min-height: 90vh;
         justify-content: start;
         background-color: transparent;
-        border-radius: var(--Pad32);
+        border-radius: var(--Pad16);
         gap: var(--Pad08);
         align-items: stretch;
     }
+/** MAIN CONTAINER */
 
 @media only screen and (max-width: 900px) {
     

@@ -2,4 +2,6 @@
     width:  100%;
     color: var(--Blanco);
     background-color: transparent;
+    border: none;
+    margin: 0;
 }

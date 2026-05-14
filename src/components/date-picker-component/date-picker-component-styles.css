@@ -1,21 +1,65 @@
-.picker-date{
+.picker-date-container{
     width: 100%;
     gap: var(--Pad08);
+    overflow: visible;
 }
-    .input-date{
-        background-color: var(--InnerComponent);
-        accent-color: var(--InnerComponent);
-        /* border: solid var(--Blanco) 1px; */
-    }
-    .arrow-date{
-        width: auto;
+    .inner-picker-date{
+        width: 100%;
         height: auto;
-        color: var(--Blanco);
+        flex-wrap: nowrap;
     }
-    .arrow-date > svg{
-        width: auto;
-        height: 2cap;
-        aspect-ratio: 1/1;
-        stroke-width: 3px;
-        margin-right: 0.5rem;
-    }
+        .middle-arrow{
+            color: var(--Blanco);
+            padding: 0 var(--Pad16);
+        }
+            .middle-arrow > svg{
+                width: auto;
+                height: 2cap;
+                aspect-ratio: 1/1;
+            }
+
+        .input-wrapper{
+            width: auto;
+            height: auto;
+            max-width: 50%;
+            background-color: var(--InnerComponent);
+            padding: var(--Pad16);
+            border-radius: var(--Pad08);
+            flex-wrap: nowrap;
+            flex-grow: 1;
+            overflow: hidden;
+            position: relative;
+        }   
+            .input-wrapper > *{
+                height: 100%;
+                flex-grow: 1;
+                flex-shrink: 1;
+                background-color: transparent;
+                color: var(--Blanco);
+            }
+            /* .text-date::placeholder {
+                color: var(--Gris);   
+                opacity: 1;
+            } */
+            .text-date{
+                border: none;
+                outline: none;
+                color: var(--Blanco);    
+                width: auto;
+                max-width: 70%;
+                text-align: center;
+                font-size: 15px;
+                padding: 0;
+            }
+            .btn-date{
+                width: auto;
+                border-radius: 0 var(--Pad08) var(--Pad08) 0;
+                border-left: solid 1px var(--Gris);
+            }
+                .btn-date > svg{
+                    margin: 0;
+                    color: var(--Blanco);
+                }
+                .btn-date:hover{
+                    background-color: transparent;
+                }

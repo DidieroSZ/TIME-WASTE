@@ -78,4 +78,4 @@
 ---
 
 Inspiración:
-[ForgetKey](https://sites.google.com/view/forgekey/inicio)
+[Time Waste Calculator](https://www.instagram.com/p/DX94QTfCKO0/?utm_source=ig_web_button_share_sheet)

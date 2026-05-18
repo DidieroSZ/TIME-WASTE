@@ -1,0 +1,35 @@
+.dash-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--Pad16);
+}
+    .inner-item{
+        background-color: var(--Blanco);
+        padding: var(--Pad16);
+        border-radius: var(--Pad08);
+        height: 170px;
+        min-height: 150px;
+    }
+    .large-item{
+        grid-column: 1 / span 3;
+    }
+    .full-counter{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--Pad08);
+    }
+        .full-counter-item{
+            height: 100%;
+            padding: var(--Pad08);
+            gap: var(--Pad08);
+        }
+            .full-counter-item > p{
+                width: auto;
+                font-weight: bold;
+                font-size: 30px;
+            }
+            .full-counter-item > small{
+                color: var(--Gris);
+                text-transform: uppercase;
+
+            }

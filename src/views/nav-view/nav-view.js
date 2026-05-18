@@ -1,5 +1,5 @@
-import { html, LitElement, css } from "lit-element";
-import { unsafeCSS } from "lit-element";
+import { html, LitElement, css } from "lit";
+import { unsafeCSS } from "lit";
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 
 /* --- STYLES --- */
@@ -29,10 +29,19 @@ export class NavView extends LitElement{
     render(){
         return html`
             <nav class="general-sections nav-container d-flexx d-row">
-                <button class="btn-gen d-flexx d-row trans">${unsafeHTML(icons.time1)} Transcurrido</button>
-                <button class="btn-gen d-flexx d-row trans">${unsafeHTML(icons.time2)} Gastado</button>
+                <h3 class="text-nav">Trancurrido</h3>
+                <h3 class="text-nav">Gastado</h3>
             </nav>
         `;
     }
+
+    /* 
+    
+    <nav class="general-sections nav-container d-flexx d-row">
+                <button class="btn-gen d-flexx d-row trans">${unsafeHTML(icons.time1)} Transcurrido</button>
+                <button class="btn-gen d-flexx d-row trans">${unsafeHTML(icons.time2)} Gastado</button>
+            </nav>
+    
+    */
 }
 customElements.define("nav-view", NavView);

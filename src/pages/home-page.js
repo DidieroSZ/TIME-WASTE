@@ -1,5 +1,5 @@
-import { html, LitElement, css } from "lit-element";
-import { unsafeCSS } from "lit-element";
+import { html, LitElement, css } from "lit";
+import { unsafeCSS } from "lit";
 
 /* --- STYLES --- */
 import generalStyles from '../styles/general.css?inline';
@@ -8,6 +8,7 @@ import generalStyles from '../styles/general.css?inline';
 /* --- VIEWS --- */
 import '../views/nav-view/nav-view.js';
 import '../views/title-view/title-view.js';
+import '../views/dashboard-view/dashboard-view.js';
 /* --- VIEWS --- */
 
 /* --- COMPONENTS --- */
@@ -32,9 +33,10 @@ export class HomePage extends LitElement{
         return html`
             <main class="main-container d-flexx d-col">
                 <section class="innerContainer">
-                    <title-view></title-view>  
+                    
                     <nav-view></nav-view>
                     <date-picker-component></date-picker-component>
+                    <dashboard-view></dashboard-view>
                 </section>
             </main>
         `;
